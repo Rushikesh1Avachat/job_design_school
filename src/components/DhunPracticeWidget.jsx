@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+  import React, { useState, useEffect, useRef } from 'react';
 import { Play, Square, Music, Volume2, Sparkles, Check, ChevronRight } from 'lucide-react';
 
 // Musical notes and keys mapping
