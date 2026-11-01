@@ -10,14 +10,15 @@ A modern, high-fidelity React + Tailwind CSS implementation of the [Nathaniel Sc
   - Custom arch portrait framing for Jason Zac at the Roland keyboard.
 - **Jobs Navigation & Role Switcher**:
   - Sticky header with NSM logo and "Jobs at Nathaniel School of Music" brand.
-  - "Every role" dropdown menu categorizing all 8 roles:
-    - *At the school*: Admin, Founder's Office, Academic Coordinator, Creative Ops, AI Media Associate, Content Writer.
+  - "Every role" dropdown menu and switcher chips linking all 9 roles:
+    - *At the school*: Personal Assistant, Admin, Founder's Office, Academic Coordinator, Creative Ops, AI Media Associate, Content Writer.
     - *Tech roles*: Founding Engineer, Raspberry Pi & ESP32 Engineer.
+  - Direct routes for the jobs directory, each role page, tech roles, and work packs.
   - Horizontally scrollable chip switcher bar with smooth snap navigation.
 - **The Two Primary Tech Roles**:
   - **Founding Engineer**: Full-stack, end to end (Dhun app, learning portal, Mac apps on Nathaniel Labs, AI publishing).
   - **Raspberry Pi & ESP32 Engineer**: Hardware, sensors & stage tech (ESP32 sensing layer, WS2812B recording lights, Chorale stage stompbox, restaurant sensor system).
-  - Interactive chip tags, full-role preview modal, and work pack launchers.
+  - Interactive chip tags, full role pages, and work pack launchers.
 - **Work Pack Application & Upload Dock**:
   - Interactive 4-part challenge accordion for both tech roles.
   - Interactive upload simulation dock with live progress segments (`X of 4 parts in`).
@@ -36,9 +37,9 @@ A modern, high-fidelity React + Tailwind CSS implementation of the [Nathaniel Sc
   - Live simulation of the DFRobot SEN0232 sound level meter with 42 dBA noise limit threshold.
   - Real-time WS2812B LED status indicator (Green / Amber / Pulse Red) and studio door reed switch toggle.
 - **Full Positions Directory & Role Details**:
-  - "All Jobs" modal with real-time search and role category filtering.
-  - Full role details modals with 10-point responsibilities, daily schedules (9:00 AM - 5:00 PM), and 90-day learning trajectories.
-  - Complete keyboard accessibility (Escape key, backdrop dismiss, and body scroll locking).
+  - A browsable directory grouped by school and tech roles.
+  - Dedicated role pages with responsibilities, schedules, qualifications, compensation details, and 90-day learning trajectories where available.
+  - Shared footer and breadcrumb navigation across directory and role pages.
 
 ## 🛠️ Tech Stack
 

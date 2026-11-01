@@ -1,5 +1,86 @@
 export const schoolRoles = [
   {
+    id: 'personal-assistant',
+    mark: '1',
+    category: 'school',
+    emoji: '🗂️',
+    num: '01',
+    tag: 'A day close to the founder',
+    title: 'Personal Assistant to the Founder',
+    subtitle: 'Coordinate the founder’s day, student support, workshops and studio routines.',
+    sum: 'Help keep the founder’s schedule, student follow-ups, workshops and studio operations moving.',
+    about: 'This full-time role supports the founder across the school’s day-to-day work. You will help organise his calendar and communications, keep student and workshop details on track, and make sure small but important follow-ups do not get lost. The role begins at the studio and can move toward a hybrid schedule after regular reviews.',
+    facts: [
+      { label: 'Reports to', value: 'Jason Zac, Founder' },
+      { label: 'Where', value: 'Langford Town studio, with a reviewed hybrid schedule' }
+    ],
+    pay: '₹3.6 lakh a year CTC',
+    paySub: ', with growth to ₹4.2 lakh',
+    mailSubject: 'Application: Personal Assistant to the Founder',
+    photos: [
+      {
+        src: '/images/jason-studio.jpg',
+        alt: 'The founder working at a keyboard in the school studio',
+        caption: 'The founder’s day begins in the studio'
+      },
+      {
+        src: '/images/shot-portal.jpg',
+        alt: 'The school learning portal',
+        caption: 'Student classes and learning resources'
+      },
+      {
+        src: '/images/office-desk.jpg',
+        alt: 'The school office and team workspace',
+        caption: 'The office where the team coordinates its work'
+      }
+    ],
+    responsibilities: [
+      { num: '01', text: 'Organise the founder’s calendar and messages, and bring time-sensitive decisions to his attention.' },
+      { num: '02', text: 'Help students manage class schedules, links, payments and follow-up questions.' },
+      { num: '03', text: 'Coordinate workshop logistics, registrations, reminders and post-event follow-up.' },
+      { num: '04', text: 'Welcome students and parents at the studio on Saturdays and guide them through their visit.' },
+      { num: '05', text: 'Keep attendance, recordings and fee information current in the school’s online systems.' },
+      { num: '06', text: 'Learn the tools used by the team and help test updates to the school’s apps.' },
+      { num: '07', text: 'Prepare clear messages for students, teachers and parents from the founder’s notes.' },
+      { num: '08', text: 'Share a weekly summary of follow-ups, attendance and decisions still needed.' },
+      { num: '09', text: 'Help new interns understand their responsibilities and review their weekly work.' },
+      { num: '10', text: 'Become familiar with the school’s lessons and apps so students can find the right resource.' }
+    ],
+    day: [
+      { time: '9:00', text: 'Review the day’s schedule with the founder before classes begin.' },
+      { time: '9:30', text: 'Sort new messages, respond to routine requests and flag urgent items.' },
+      { time: '11:00', text: 'Coordinate student schedules, lesson links and follow-ups.' },
+      { time: '1:00', text: 'Lunch.' },
+      { time: '2:00', text: 'Confirm workshop plans, registrations and upcoming reminders.' },
+      { time: '3:00', text: 'Update portal records for attendance, recordings and fees.' },
+      { time: '4:00', text: 'Check in with interns and review current tasks.' },
+      { time: '4:45', text: 'Send the founder a concise update on finished and pending work.' }
+    ],
+    qualities: [
+      'Communicate clearly in spoken and written English.',
+      'Stay calm and helpful with students and parents while keeping commitments on time.',
+      'Learn new software and AI tools quickly.',
+      'Handle private information with discretion.',
+      'Notice gaps and follow up before they become bigger problems.',
+      'Previous assistant, customer support or operations experience is useful but not required.'
+    ],
+    learning: [
+      'How a music school serving students across many countries operates.',
+      'Practical AI and software tools for communication and coordination.',
+      'How to manage a learning portal, enquiry board and student records.',
+      'How to plan and deliver workshops.',
+      'How to coordinate and support a small team.'
+    ],
+    ninetyDays: [
+      { month: 1, title: 'Learn the systems', stage: 'Training', desc: 'Meet the team, learn the school’s portals and routines, and take on calendar and inbox tasks with regular review.' },
+      { month: 2, title: 'Own the follow-ups', stage: 'Taking ownership', desc: 'Coordinate student visits and workshop details, and manage the regular student follow-up process.' },
+      { month: 3, title: 'Lead the routine', stage: 'Growing responsibility', desc: 'Support intern hand-offs, prepare weekly updates and review the next steps toward a hybrid schedule.' }
+    ],
+    qualifications: 'Any degree is welcome; fresh graduates may apply. Assistant, support or operations experience is helpful. You should be able to commute to the Langford Town studio in Bengaluru and do not need a music qualification.',
+    reportsTo: 'Jason Zac, Founder, Nathaniel School of Music.',
+    pathToFullTime: 'Full-time from day one, with a 3-month probation. ₹3.6 lakh a year CTC, with growth to ₹4.2 lakh.'
+  },
+  {
     id: 'admin',
     mark: '1',
     category: 'school',

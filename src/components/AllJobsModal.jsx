@@ -22,8 +22,16 @@ export default function AllJobsModal({ onClose, onSelectRole }) {
   }, [onClose]);
 
   const allJobsList = [
-    ...schoolRoles.map((r) => ({ ...r, type: 'school' })),
-    ...techRoles.map((r) => ({ ...r, type: 'tech', num: r.packSlug === 'engineer' ? '07' : '08' }))
+    ...schoolRoles.map((r, index) => ({
+      ...r,
+      type: 'school',
+      num: String(index + 1).padStart(2, '0'),
+    })),
+    ...techRoles.map((r, index) => ({
+      ...r,
+      type: 'tech',
+      num: String(schoolRoles.length + index + 1).padStart(2, '0'),
+    }))
   ];
 
   const filteredJobs = allJobsList.filter((job) => {
@@ -88,7 +96,7 @@ export default function AllJobsModal({ onClose, onSelectRole }) {
                   : 'bg-transparent text-inherit hover:opacity-75'
               }`}
             >
-              Tech Roles (2)
+              Tech Roles ({techRoles.length})
             </button>
             <button
               onClick={() => setFilter('school')}
@@ -98,7 +106,7 @@ export default function AllJobsModal({ onClose, onSelectRole }) {
                   : 'bg-transparent text-inherit hover:opacity-75'
               }`}
             >
-              At The School (6)
+              At The School ({schoolRoles.length})
             </button>
           </div>
 
@@ -140,7 +148,7 @@ export default function AllJobsModal({ onClose, onSelectRole }) {
                   <h3 className="font-serif text-[20px] sm:text-[22px] leading-tight text-[#1c1916] dark:text-[#f2eadc] group-hover:text-[#9e5f1c] dark:group-hover:text-[#e3aa5f] transition-colors mb-1.5">
                     {job.title}
                   </h3>
-                  <p className="text-[13.5px] leading-relaxed text-[#4b453c] dark:text-[#cdc3b2] line-clamp-2 m-0">
+                  <p className="text-[14px] leading-[1.6] text-[#4b453c] dark:text-[#cdc3b2] m-0">
                     {job.subtitle || job.headline}
                   </p>
                 </div>

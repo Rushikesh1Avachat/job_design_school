@@ -181,8 +181,8 @@ export default function WorkPackModal({ roleId, onClose }) {
                     {isDone ? <Check className="w-4 h-4" /> : p.num}
                   </span>
                   <div className="min-w-0">
-                    <b className="block font-medium text-[13px] truncate text-[#1c1916] dark:text-[#f2eadc]">
-                      {p.title.split(':')[0]}
+                    <b className="block min-w-0 whitespace-normal break-words font-medium text-[13px] leading-[1.35] text-[#1c1916] dark:text-[#f2eadc]">
+                      {p.title}
                     </b>
                     <small className="block text-[11px] text-[#7b7367] dark:text-[#9b9182]">
                       {isDone ? '✓ Uploaded' : p.duration}
